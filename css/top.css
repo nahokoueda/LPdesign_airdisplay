@@ -1,0 +1,457 @@
+@charset "UTF-8";
+/*  common
+--------------------------------*/
+*, *::before, *::after{
+    box-sizing: border-box;
+}
+body{
+    color: #422f02;
+    background-color: #f7f7f7;
+    font-size: 20px;
+}
+
+/*  header
+--------------------------------*/
+header{
+    width: 100vw;
+    height: 650px;
+    background: url(../image/first-view02@2x.png) no-repeat 30% 30%;
+    font-family:"ヒラギノ丸ゴ Pro W4","ヒラギノ丸ゴ Pro","Hiragino Maru Gothic Pro","ヒラギノ角ゴ Pro W3","Hiragino Kaku GothicPro","HG丸ｺﾞｼｯｸM-PRO","HGMaruGothicMPRO";
+    background-size: cover;
+    position: relative;
+    margin-bottom: 100px;
+
+}
+header figure{
+    width: 160px;
+    height: 50;
+    position: absolute;
+    top: 30px;
+    left: 80px;
+}
+.group{
+    width: 850px;
+    height: 650px;
+    margin: 0 auto;
+    padding-top: 310px;
+    text-align: right;
+}
+.top-title__area{
+    width: 550px;
+    display: inline-block;
+}
+.top-title{
+    font-size: 16px;
+    line-height: 40px;
+    margin-bottom: 80px;
+    display: flex;
+    flex-wrap: wrap;
+    display: block;
+    text-align: left;
+}
+.top-title__first{
+    /* filter: drop-shadow(10px 10px 5px #b3e1f2); */
+    /* background: rgba(255, 255, 255, 0.7);背景色
+    padding: 0.2em;文字まわり（上下左右）の余白 */
+}
+.top-title__small{
+    font-size: 20px;
+    text-shadow: 6px -3px #FFFFFF;
+    /* background: rgba(255, 255, 255, 0.7);背景色 */
+    /* padding: 1.2em 0 0.4em;文字まわり（上下左右）の余白 */
+}
+.top-title__big{
+    font-size: 48px;
+}
+/*  button
+--------------------------------*/
+.button-request{
+    display: inline-block;
+    text-align: center;
+    width: 320px;
+    height: 80px;
+    padding: 25px 0 0 0;
+    background-color: #f66060;
+    border-radius: 50px;
+    box-shadow: 3px 3px 3px gray;
+    transition-property: background-color;
+    transition-duration: 0.3s;
+    transition-delay: 0;
+    transition-timing-function: ease-in-out;
+    cursor: pointer;
+}
+header .button-request:hover{
+    background-color: #f66060;
+    opacity: 0.7;
+    color: #422f02;
+}
+header a{
+    text-decoration: none;
+    color: #fff;
+    font-size: 26px;
+}
+
+/*  main01
+--------------------------------*/
+main{
+    width: 1080px;
+    margin: 0 auto;
+    font-size: 20px;
+    font-family: "游ゴシック", "ヒラギノ角ゴ Pro W3", "メイリオ", sans-serif;
+}
+
+.graduation-work__title{
+    width: 250px;
+    height: 35px;
+    background: linear-gradient(-200deg, #FFFFFF, #f68e8e);
+    border-radius: 50px;
+    margin-bottom: 10px;
+}
+.graduation-work__title h2{
+    font-size: 30px;
+    font-weight: 600;
+
+}
+.graduation-work__explanation{
+    border-top: 1px solid gray;
+    padding: 10px 0 40px;
+}
+.graduation-work__uiuxd{
+    margin: 0 55px 0 55px;
+}
+.graduation-work__uiuxd ul{
+    display: flex;
+    justify-content: space-between;
+}
+.graduation-work__uiuxd h2{
+    font-size: 24px;
+    padding-bottom: 20px;
+}
+.graduation-work__uiuxd img{
+    z-index: 1;
+    width: 450px;
+    height: 300px;
+    /* transition-property: background-color;
+    transition-duration: 0.3s;
+    transition-delay: 0;
+    transition-timing-function: ease-in-out; */
+    cursor: pointer;
+}
+.graduation-work__uiuxd .bg_image{
+    z-index: 100;
+    transition-property: background-color;
+    transition-duration: 0.3s;
+    transition-delay: 0;
+    transition-timing-function: ease-in-out;
+}
+.graduation-work__uiuxd .bg_image:hover{
+    background-color: rgba(0,0,0,0.9);
+    /* opacity: 0.6; */
+}
+.graduation-work__uiuxd h3{
+    text-align: center;
+    padding-top: 10px;
+    margin-bottom: 100px;
+}
+/*  main01-carriculum
+--------------------------------*/
+.graduation-work__curriculum h2{
+    text-align: center;
+    font-size: 30px;
+    padding-bottom: 40px;
+}
+.graduation-work__curriculum img{
+    display: block;
+    width: 800px;
+    height: 520px;
+    margin: 0 auto;
+    padding-bottom: 110px;
+}
+/*  button-middle
+--------------------------------*/
+.button-area{
+    width: 590px;
+    height: 155px;
+    margin: 0 auto;
+    background-color: #FFFFFF;
+    border-radius: 10px;
+    border: 1px solid #422f02;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap; 
+    margin-bottom: 100px;
+}
+.button-area h2{
+    font-weight: 600;
+    align-items: center;
+    margin: 10px auto;
+}
+.button-area .button-request{
+    width: 320px;
+    height: 80px;
+    padding: 25px 0 0 0;
+    background-color: #f66060;
+    border-radius: 50px;
+    box-shadow: 3px 3px 3px gray;
+    transition-property: background-color;
+    transition-duration: 0.3s;
+    transition-delay: 0;
+    transition-timing-function: ease-in-out;
+    cursor: pointer;
+}
+.button-request:hover{
+    background-color: #f66060;
+    opacity: 0.7;
+    color: #422f02;
+}
+.button-area a{
+    text-decoration: none;
+    color: #fff;
+    font-size: 26px;
+}
+/*  main02
+--------------------------------*/
+.recommendation__title{
+    width: 450px;
+    height: 35px;
+    background: linear-gradient(-200deg, #FFFFFF, #f68e8e);
+    border-radius: 50px;
+    margin-bottom: 10px;
+    /* border-bottom: 1px solid gray; */
+}
+.recommendation__title h2{
+    font-size: 30px;
+    font-weight: 600;
+}
+.recommendation-blank__explanation{
+    width: 1080px;
+    border-top: 1px solid gray;
+    padding: 10px 0 40px;
+}
+/*  point01,02,03
+--------------------------------*/
+.recommendation-group{
+    width: 970px;
+    margin: 0 auto 100px;
+}
+.group01{
+    display: flex;
+    margin-bottom: 70px;
+
+}
+.group-point{
+    width: 180px;
+    height: 90px;
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.point1 {
+    font-weight: 600;
+}
+.point1 span{
+    font-size: 24px;
+    background: rgba(255, 255, 0, 0.7);/*背景色*/
+    padding: 0.01em;/*文字まわり（上下左右）の余白*/
+}
+.fa-hand-point-up{
+    align-items: center;
+    margin: 0 auto;
+    padding-top: 20px;
+}
+.group-text{
+    padding-left: 20px;
+}
+.group01-title{
+    font-size: 32px;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+.group01-sentence{
+    font-size: 20px;
+    line-height: 35px;
+}
+/*  main03
+--------------------------------*/
+.job__title{
+    width: 350px;
+    height: 35px;
+    background: linear-gradient(-200deg, #FFFFFF, #f68e8e);
+    border-radius: 50px;
+    margin-bottom: 10px;
+    /* border-bottom: 1px solid gray; */
+}
+.job__title h2{
+    font-size: 30px;
+    font-weight: 600;
+}
+.job__explanation{
+    width: 1080px;
+    border-top: 1px solid gray;
+    padding: 10px 0 40px;
+}
+.bg-job__kinds{
+    width: 1080px;
+    background: url(../image/end-bg.png)no-repeat center center;
+    background-size: contain;
+    /* background-position:left; */
+}
+.job__kinds{
+    max-width: 1080px;
+    /* height: 500px; */
+    /* background: url(../image/end-bg.png)no-repeat 0% 0%; */
+    /* background-size: contain;
+    background-position: bottom; */
+    display: flex;
+    justify-content: center;
+    /* flex-wrap: wrap; */
+    margin: 0 auto;
+    margin-bottom: 100px;
+}
+.job__kinds h2{
+    font-size: 24px;
+    font-weight: 600;
+    padding-bottom: 20px;
+}
+.job__freelance{
+    /* margin-left: 60px; */
+    text-align: center;
+    line-height: 30px;
+    padding-right: 40px;
+}
+.job__freelance img{
+    width: 300px;
+    height: 300px;
+    object-fit: cover;
+    object-position:40% 40%;
+    border-radius: 50%;
+    margin-bottom: 30px;
+}
+.job__home-employment img{
+    width: 300px;
+    height: 300px;
+    object-fit: cover;
+    object-position:40% 20%;
+    border-radius: 50%;
+    margin-bottom: 30px;
+}
+.job__home-employment{
+    text-align: center;
+    line-height: 30px;
+}
+.job__skill img{
+    width: 300px;
+    height: 300px;
+    object-fit: cover;
+    object-position:90% 0%;
+    border-radius: 50%;
+    margin-bottom: 30px;
+}
+.job__skill{
+    /* margin-right: 60px; */
+    text-align: center;
+    line-height: 30px;
+    padding-left: 40px;
+}
+/*  button-middle
+--------------------------------*/
+/* .button-area{
+    width: 590px;
+    height: 155px;
+    margin: 0 auto;
+    background-color: #FFFFFF;
+    border-radius: 10px;
+    border: 1px solid #422f02;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap; 
+    margin-bottom: 150px;
+}
+.button-area h2{
+    font-weight: 600;
+    align-items: center;
+    margin: 10px auto;
+}
+.button-area .button-request{
+    width: 320px;
+    height: 80px;
+    padding: 25px 0 0 0;
+    background-color: #f66060;
+    border-radius: 50px;
+    box-shadow: 3px 3px 3px gray;
+    transition-property: background-color;
+    transition-duration: 0.3s;
+    transition-delay: 0;
+    transition-timing-function: ease-in-out;
+    cursor: pointer;
+}
+.button-request:hover{
+    background-color: #f66060;
+    opacity: 0.7;
+    color: #422f02;
+}
+.button-area a{
+    text-decoration: none;
+    color: #fff;
+    font-size: 26px;
+} */
+/*  back-to-top
+--------------------------------*/
+.page-top{
+    position: relative;
+}
+.button__page-top{
+    width: 90px;
+    height: 115px;
+    background-color: #FFFFFF;
+    opacity: 0.9;
+    border-radius: 10px;
+    border: 1px solid #f66060;
+    position: fixed;
+    right: 80px;
+    bottom: 40px;;
+}
+.page-top a{
+    font-size: 24px;
+    color: #f66060;
+    text-decoration: none;
+    cursor: pointer;
+}
+.page-top .fa-arrow-up{
+    display: block;
+    text-align: center;
+    padding-top: 10px;
+}
+.page-top h2{
+    padding-top: 10px;;
+    text-align: center;
+}
+
+/*  footer
+--------------------------------*/
+footer{
+    width: 100vw;
+    height: 200px;
+    font-size: 24px;
+    background-color: #dfdfdf;
+}
+footer ul{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+footer ul li{
+    padding: 50px 40px;
+}
+footer ul a{
+    text-decoration: none;
+    color: #422f02;
+    cursor: pointer;
+}
+small{
+    display: block;
+    text-align: center;
+    font-size: 16px;
+    
+}
