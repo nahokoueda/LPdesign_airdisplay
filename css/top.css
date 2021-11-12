@@ -56,12 +56,13 @@ header figure{
 }
 .top-title__small{
     font-size: 20px;
-    text-shadow: 6px -3px #FFFFFF;
+    /* text-shadow: 5px -2px #FFFFFF; */
     /* background: rgba(255, 255, 255, 0.7);背景色 */
     /* padding: 1.2em 0 0.4em;文字まわり（上下左右）の余白 */
 }
 .top-title__big{
     font-size: 48px;
+    text-shadow: 6px -3px #FFFFFF;
 }
 /*  button
 --------------------------------*/
@@ -118,6 +119,7 @@ main{
 }
 .graduation-work__uiuxd{
     margin: 0 55px 0 55px;
+    position: relative;
 }
 .graduation-work__uiuxd ul{
     display: flex;
@@ -127,28 +129,27 @@ main{
     font-size: 24px;
     padding-bottom: 20px;
 }
-.graduation-work__uiuxd img{
-    z-index: 1;
+.graduation-work__uiuxd div{
     width: 450px;
     height: 300px;
-    /* transition-property: background-color;
-    transition-duration: 0.3s;
-    transition-delay: 0;
-    transition-timing-function: ease-in-out; */
-    cursor: pointer;
 }
 .graduation-work__uiuxd .bg_image{
-    z-index: 100;
     transition-property: background-color;
-    transition-duration: 0.3s;
+    transition-duration: 1s;
     transition-delay: 0;
     transition-timing-function: ease-in-out;
+    cursor: pointer;
+}
+.graduation-work__uiuxd img{
+    width: 100%;
 }
 .graduation-work__uiuxd .bg_image:hover{
-    background-color: rgba(0,0,0,0.9);
-    /* opacity: 0.6; */
+    background-color: rgba(0,0,0,0.8);
+    opacity: 0.6;
 }
 .graduation-work__uiuxd h3{
+    width: 450px;
+    height: 30px;
     text-align: center;
     padding-top: 10px;
     margin-bottom: 100px;
@@ -321,16 +322,16 @@ main{
     padding-right: 40px;
 }
 .job__freelance img{
-    width: 300px;
-    height: 300px;
+    width: 280px;
+    height: 280px;
     object-fit: cover;
     object-position:40% 40%;
     border-radius: 50%;
     margin-bottom: 30px;
 }
 .job__home-employment img{
-    width: 300px;
-    height: 300px;
+    width: 280px;
+    height: 280px;
     object-fit: cover;
     object-position:40% 20%;
     border-radius: 50%;
@@ -341,8 +342,8 @@ main{
     line-height: 30px;
 }
 .job__skill img{
-    width: 300px;
-    height: 300px;
+    width: 280px;
+    height: 280px;
     object-fit: cover;
     object-position:90% 0%;
     border-radius: 50%;
@@ -396,6 +397,7 @@ main{
     color: #fff;
     font-size: 26px;
 } */
+
 /*  back-to-top
 --------------------------------*/
 .page-top{
@@ -405,7 +407,7 @@ main{
     width: 90px;
     height: 115px;
     background-color: #FFFFFF;
-    opacity: 0.9;
+    opacity: 0.85;
     border-radius: 10px;
     border: 1px solid #f66060;
     position: fixed;
@@ -421,10 +423,19 @@ main{
 .page-top .fa-arrow-up{
     display: block;
     text-align: center;
-    padding-top: 10px;
+    position: absolute;
+    top: 20px;
+    left: 22px;
+    transition-property: top;
+    transition-duration: 0.3s;
+    transition-delay: 0;
+    transition-timing-function: ease-in-out;
+}
+.button__page-top:hover .fa-arrow-up{
+    top: 2px;
 }
 .page-top h2{
-    padding-top: 10px;;
+    padding-top: 80px;
     text-align: center;
 }
 
@@ -448,6 +459,13 @@ footer ul a{
     text-decoration: none;
     color: #422f02;
     cursor: pointer;
+    transition-property: color;
+    transition-duration: 0.3s;
+    transition-delay: 0;
+    transition-timing-function: ease-in-out;
+}
+footer ul li:hover a{
+    color: #F7F7F7;
 }
 small{
     display: block;
