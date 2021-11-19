@@ -15,12 +15,11 @@ body{
 header{
     width: 100vw;
     height: 650px;
-    background: url(../image/first-view02@2x.png) no-repeat 30% 30%;
+    background: url(../image/first-view0202@2x.png) no-repeat 90% 0%;
     font-family:"ヒラギノ丸ゴ Pro W4","ヒラギノ丸ゴ Pro","Hiragino Maru Gothic Pro","ヒラギノ角ゴ Pro W3","Hiragino Kaku GothicPro","HG丸ｺﾞｼｯｸM-PRO","HGMaruGothicMPRO";
     background-size: cover;
     position: relative;
     margin-bottom: 100px;
-
 }
 header figure{
     width: 160px;
@@ -30,10 +29,10 @@ header figure{
     left: 80px;
 }
 .group{
-    width: 850px;
-    height: 650px;
+    width: 870px;
+    height: 500px;
     margin: 0 auto;
-    padding-top: 310px;
+    padding-top: 330px;
     text-align: right;
 }
 .top-title__area{
@@ -42,7 +41,7 @@ header figure{
 }
 .top-title{
     font-size: 16px;
-    line-height: 40px;
+    line-height: 46px;
     margin-bottom: 80px;
     display: flex;
     flex-wrap: wrap;
@@ -134,18 +133,26 @@ main{
     height: 300px;
 }
 .graduation-work__uiuxd .bg_image{
+    position: relative;
+    cursor: pointer;
+}
+.graduation-work__uiuxd .bg_image .hover-area{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
     transition-property: background-color;
-    transition-duration: 1s;
+    transition-duration: 0.3s;
     transition-delay: 0;
     transition-timing-function: ease-in-out;
-    cursor: pointer;
 }
 .graduation-work__uiuxd img{
     width: 100%;
 }
-.graduation-work__uiuxd .bg_image:hover{
-    background-color: rgba(0,0,0,0.8);
-    opacity: 0.6;
+.graduation-work__uiuxd .bg_image:hover .hover-area{
+    background-color: rgba(0,0,0,0.3);
+    /* opacity: 0.6; */
 }
 .graduation-work__uiuxd h3{
     width: 450px;
@@ -185,7 +192,7 @@ main{
 .button-area h2{
     font-weight: 600;
     align-items: center;
-    margin: 10px auto;
+    margin: 16px auto 0;
 }
 .button-area .button-request{
     width: 320px;
