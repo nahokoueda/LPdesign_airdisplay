@@ -42,7 +42,7 @@ header figure{
 .top-title{
     font-size: 16px;
     line-height: 46px;
-    margin-bottom: 80px;
+    margin-bottom: 50px;
     display: flex;
     flex-wrap: wrap;
     display: block;
@@ -94,20 +94,26 @@ header a{
 /*  main01
 --------------------------------*/
 main{
-    width: 1080px;
-    margin: 0 auto;
+    /* width: 1080px;
+    margin: 0 auto; */
     font-size: 20px;
     font-family: "游ゴシック", "ヒラギノ角ゴ Pro W3", "メイリオ", sans-serif;
 }
 
+.row{
+    width: 1080px;
+    margin: 0 auto;
+}
+
 .graduation-work__title{
-    width: 250px;
+    width: 320px;
     height: 35px;
     background: linear-gradient(-200deg, #FFFFFF, #f68e8e);
-    border-radius: 50px;
+    border-radius:0 50px 50px 0;
     margin-bottom: 10px;
 }
 .graduation-work__title h2{
+    padding-left: 60px;
     font-size: 30px;
     font-weight: 600;
 
@@ -220,14 +226,15 @@ main{
 /*  main02
 --------------------------------*/
 .recommendation__title{
-    width: 450px;
+    width: 500px;
     height: 35px;
     background: linear-gradient(-200deg, #FFFFFF, #f68e8e);
-    border-radius: 50px;
+    border-radius: 0 50px 50px 0;
     margin-bottom: 10px;
     /* border-bottom: 1px solid gray; */
 }
 .recommendation__title h2{
+    padding-left: 60px;
     font-size: 30px;
     font-weight: 600;
 }
@@ -282,31 +289,34 @@ main{
 }
 /*  main03
 --------------------------------*/
+
 .job__title{
-    width: 350px;
+    width: 370px;
     height: 35px;
     background: linear-gradient(-200deg, #FFFFFF, #f68e8e);
-    border-radius: 50px;
+    border-radius: 0 50px 50px 0;
     margin-bottom: 10px;
     /* border-bottom: 1px solid gray; */
 }
 .job__title h2{
+    padding-left: 60px;
     font-size: 30px;
     font-weight: 600;
 }
 .job__explanation{
     width: 1080px;
+    margin: 0 auto;
     border-top: 1px solid gray;
     padding: 10px 0 40px;
 }
 .bg-job__kinds{
-    width: 1080px;
+    width: 100vw;
     background: url(../image/end-bg.png)no-repeat center center;
     background-size: contain;
-    /* background-position:left; */
 }
 .job__kinds{
     max-width: 1080px;
+    margin: 0 auto;
     /* height: 500px; */
     /* background: url(../image/end-bg.png)no-repeat 0% 0%; */
     /* background-size: contain;
