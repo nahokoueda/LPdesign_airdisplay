@@ -48,11 +48,6 @@ header figure{
     display: block;
     text-align: left;
 }
-.top-title__first{
-    /* filter: drop-shadow(10px 10px 5px #b3e1f2); */
-    /* background: rgba(255, 255, 255, 0.7);背景色
-    padding: 0.2em;文字まわり（上下左右）の余白 */
-}
 .top-title__small{
     font-size: 20px;
     /* text-shadow: 5px -2px #FFFFFF; */
@@ -101,7 +96,7 @@ main{
 }
 
 .row{
-    width: 1080px;
+    max-width: 1080px;
     margin: 0 auto;
 }
 
