@@ -78,12 +78,18 @@ header figure{
 header .button-request:hover{
     background-color: #f66060;
     opacity: 0.7;
-    color: #422f02;
+    color: #ffffff;
 }
 header a{
     text-decoration: none;
     color: #fff;
     font-size: 26px;
+}
+.button-request p{
+    letter-spacing: 0.08em;
+}
+.kerning{
+    font-feature-settings: "palt" 1;
 }
 
 /*  main01
@@ -180,7 +186,7 @@ main{
 --------------------------------*/
 .button-area{
     width: 590px;
-    height: 155px;
+    height: 170px;
     margin: 0 auto;
     background-color: #FFFFFF;
     border-radius: 10px;
@@ -193,12 +199,13 @@ main{
 .button-area h2{
     font-weight: 600;
     align-items: center;
-    margin: 16px auto 0;
+    margin: 18px auto 0;
 }
 .button-area .button-request{
     width: 320px;
     height: 80px;
     padding: 25px 0 0 0;
+    margin-bottom: 12px;
     background-color: #f66060;
     border-radius: 50px;
     box-shadow: 3px 3px 3px gray;
@@ -211,7 +218,7 @@ main{
 .button-request:hover{
     background-color: #f66060;
     opacity: 0.7;
-    color: #422f02;
+    color: #ffffff;
 }
 .button-area a{
     text-decoration: none;
@@ -333,6 +340,41 @@ main{
     line-height: 30px;
     padding-right: 40px;
 }
+/*  main03-hover common
+--------------------------------*/
+.job__hover-area{
+    position: relative;
+}
+.job__hover-area h2{
+    display: none;
+    position: absolute;
+    top: 40%;
+    left: 20%;
+    transition-property: color;
+    transition-duration: 0.2s;
+    transition-delay: 0;
+    transition-timing-function: ease-in-out;
+}
+.job__home-employment h2{
+    position: absolute;
+    top: 40%;
+    left: 25%;
+}
+.job__skill h2{
+    position: absolute;
+    top: 40%;
+    left: 12%;
+}
+
+.job__hover-area:hover h2{
+    display: block;
+    color: #FFFFFF;
+}
+.job__hover-area:hover img{
+    filter: brightness(50%);
+}
+/* --------------------------------*/
+
 .job__freelance img{
     width: 280px;
     height: 280px;
@@ -423,8 +465,8 @@ main{
     border-radius: 10px;
     border: 1px solid #f66060;
     position: fixed;
-    right: 80px;
-    bottom: 40px;;
+    right: 30px;
+    bottom: 40px;
 }
 .page-top a{
     font-size: 24px;
